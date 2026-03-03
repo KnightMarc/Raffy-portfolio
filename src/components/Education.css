@@ -1,0 +1,43 @@
+.education-card {
+    background: var(--light-navy);
+    padding: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.education-icon {
+    font-size: 4rem;
+    background: rgba(58, 134, 255, 0.1);
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--accent);
+}
+
+.degree {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.university {
+    font-size: 1.1rem;
+    color: var(--slate-gray);
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
